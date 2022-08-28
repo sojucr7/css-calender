@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: sans-serif;
+        color: white;
+        background-color: salmon;
+      }
+      .calender {
+        width: 80%;
+        max-width: 450px;
+        border-radius: 50%;
+      }
+      .calender-header {
+        text-align: center;
+        padding: 2.5rem;
+        background-color: lightseagreen;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: lightgray;
+      }
+      .calender-body {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .date-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        min-height: 350px;
+      }
+      .day,
+      .day-num {
+        flex: 0 0 14.28%;
+        box-sizing: border-box;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .day {
+        padding: .5vw;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      .day-num {
+        padding: .5vw;
+        font-size: .75rem;
+        transition: all .75ms;
+        border: 0px solid red;
+      }
+      .day-num:hover{
+        border-width: 1px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="calender">
+      <div class="calender-header">
+        <h1 class="month">AUGUST</h1>
+        <p>Sat Aug 27 2022</p>
+      </div>
+      <div class="calender-body">
+        <div class="date-wrapper">
+          <div class="day">Mon</div>
+          <div class="day">Tue</div>
+          <div class="day">Wed</div>
+          <div class="day">Thu</div>
+          <div class="day">Fri</div>
+          <div class="day">Sat</div>
+          <div class="day">Sun</div>
+
+          <div class="day-num">1</div>
+          <div class="day-num">2</div>
+          <div class="day-num">3</div>
+          <div class="day-num">4</div>
+          <div class="day-num">5</div>
+          <div class="day-num">6</div>
+          <div class="day-num">7</div>
+
+          <div class="day-num">8</div>
+          <div class="day-num">9</div>
+          <div class="day-num">10</div>
+          <div class="day-num">11</div>
+          <div class="day-num">12</div>
+          <div class="day-num">13</div>
+          <div class="day-num">14</div>
+
+          <div class="day-num">15</div>
+          <div class="day-num">16</div>
+          <div class="day-num">17</div>
+          <div class="day-num">18</div>
+          <div class="day-num">19</div>
+          <div class="day-num">20</div>
+          <div class="day-num">21</div>
+
+          <div class="day-num">22</div>
+          <div class="day-num">23</div>
+          <div class="day-num">24</div>
+          <div class="day-num">25</div>
+          <div class="day-num">26</div>
+          <div class="day-num">27</div>
+          <div class="day-num">28</div>
+
+          <div class="day-num">29</div>
+          <div class="day-num">30</div>
+          <div class="day-num"></div>
+          <div class="day-num"></div>
+          <div class="day-num"></div>
+          <div class="day-num"></div>
+          <div class="day-num"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
